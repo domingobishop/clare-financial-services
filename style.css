@@ -1,0 +1,364 @@
+/*
+Theme Name:     CFS v1
+Theme URI:      http://chrisbishop.me.uk/
+Author:         Chris Bishop
+Description:    A 'blank canvas' for developing WordPress themes. 
+Author URI:     http://chrisbishop.me.uk/
+Version:        1.0.0
+License:		Creative Commons Attribution-Share Alike 3.0 (http://creativecommons.org/licenses/by-sa/3.0/. Feel free to make any changes.
+Text Domain: cfs
+*/
+
+@import url("css/bootstrap.min.css");
+
+/**
+ * Global
+ * ----------------------------------------------------------------------------
+ */
+ 
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif, sansserif;
+	/*The weights are 300 (light), 400 (normal), 600 (semibold), and 700 (bold) and the only acceptable CSS keyword is "normal". */
+	text-rendering: optimizeLegibility;
+	color: #444;
+	font-size: 16px;
+	line-height: 1.5;
+}
+html, button, input, select, textarea, h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif, sansserif;	 
+}
+a {
+  color: #4b77c1;
+}
+a:hover, a:focus {
+  color: #3399ff;
+}
+.entry-content p {
+  margin: 0 0 1.2em;
+  line-height: 1.8;
+}
+.entry-content h1, .entry-content h2, .entry-content h3 {
+  margin-top: 1em;
+  margin-bottom: 0.8em;
+}
+.btn-default {
+  color: #ffffff;
+  background-color: #4b77c1;
+  border-bottom: 4px solid #314f8a;
+}
+.btn-default:hover {
+	background-color: #3399ff;
+	border-bottom: 4px solid #4b77c1;
+}
+.bc-main {
+	margin-top: 25px;
+}
+.bc-main > .page {
+	margin-top: 85px;
+}
+
+/**
+ * Hyphenation
+ * ----------------------------------------------------------------------------
+ */
+
+h1, h2, h3, h4, p, ul, li, ol, dl, blockquote, .post-statement, .statement {
+	-webkit-hyphens: none;
+   -moz-hyphens: none;
+	-ms-hyphens:none;
+	hyphens: none;
+	word-break: keep-all;
+}
+
+.site-content article {
+   word-wrap: normal;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+   hyphens: none;
+}
+
+.widget-area .widget {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+	word-wrap: normal;
+}
+
+/**
+ * Nav
+ * ----------------------------------------------------------------------------
+ */
+.container-fluid {
+	max-width: 1170px;
+}
+.main-navigation ul > li {
+	display: block;
+	float: left;
+	position: relative;
+	list-style: none;
+	padding: 18.5px 15px 20.5px;
+}
+.main-navigation ul > li > a {
+	line-height: 21px;
+}
+.main-navigation ul > li > a:hover, .main-navigation ul > li > a:focus {
+	text-decoration: none;
+	color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #99ccff;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #ffffff;
+}
+.navbar {
+	text-transform: uppercase;
+	font-weight: 500;
+	border-radius: 0;
+	background-color: #314f8a;
+	background: -webkit-linear-gradient(#4b77c1, #314f8a); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#4b77c1, #314f8a); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#4b77c1, #314f8a); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#4b77c1, #314f8a); /* Standard syntax */
+}
+.navbar-nav > li > a {
+	padding-top: 34.5px;
+	padding-bottom: 5.5px;
+}
+.navbar-brand {
+	padding: 0 0 0 15px;
+	margin: 12.5px 0;
+}
+
+/**
+ * Header
+ * ----------------------------------------------------------------------------
+ */
+ 
+header {
+	background-color:#eee;
+	margin-bottom: 40px;
+}
+a.navbar-brand .sm-title {
+	display:none;
+}
+
+/**
+ * Footer
+ * ----------------------------------------------------------------------------
+ */
+ 
+footer {
+	margin-top: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	color: #ffffff;
+	background-color: #314f8a;
+}
+footer ul {
+	padding: 0;
+	list-style-type: none;
+}
+.bc-info {
+	margin-top: 40px;
+}
+.footer-col {
+  text-align: left;
+}
+footer a {
+	color:#99ccff;
+}
+ 
+/**
+ * Home
+ * ----------------------------------------------------------------------------
+ */
+.services-wrap {
+	position: relative;
+	min-height: 120px;
+}
+.services {
+	position: absolute;
+	width: 100%;
+	top: -120px;
+	z-index: 99;
+}
+.carousel-indicators {
+	bottom: 110px;
+}
+.service-box {
+	float: left;
+  	width: 20%;
+}
+.service-box a {
+	font-weight: 600;
+}
+.service-box-inner {
+	background: #fff;
+	margin: 15px;
+	padding: 15px;
+	min-height: 188px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+}
+.award {
+	width: 180px;
+	margin: 20px auto;
+	position: relative;
+	display: block;
+}
+.award img {
+	width: 100%;
+	-webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 992px) {
+	
+}
+@media (max-width: 992px) {
+	.services {
+		position: relative;
+		top: 0px;
+		height: auto;
+	}
+	.service-box {
+		width: 100%;
+	}
+}
+
+/**
+ * Page & Posts
+ * ----------------------------------------------------------------------------
+ */
+ 
+
+ 
+
+/**
+ * Sidebar & Widgets
+ * ----------------------------------------------------------------------------
+ */
+ 
+.sidebar-container .widget {
+  padding: 16px;
+  background-color: #eee;
+  margin-top: 24px;
+} 
+ .bc-sidebar .btn {
+	 width: 100%;
+	 margin-bottom: 15px;
+ }
+.bc-sidebar ul {
+	padding: 0;
+	margin: 0;
+}
+.bc-sidebar ul li {
+	list-style: none;
+	padding: 7px 0;
+	margin: 0;
+}
+
+/* Images */
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figure.wp-caption.alignleft,
+img.alignleft {
+	margin: 5px 20px 5px 0;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 10px 5px 0;
+}
+
+figure.wp-caption.alignright,
+img.alignright {
+	margin: 5px 0 5px 20px;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 5px 10px;
+}
+
+img.aligncenter {
+	margin: 5px auto;
+}
+
+img.alignnone {
+	margin: 5px 0;
+}
+
+.wp-caption .wp-caption-text,
+.entry-caption,
+.gallery-caption {
+	color: #220e10;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 300;
+	margin: 0 0 24px;
+}
+
+div.wp-caption.alignright img[class*="wp-image-"] {
+	float: right;
+}
+
+div.wp-caption.alignright .wp-caption-text {
+	padding-left: 10px;
+}
+
+img.wp-smiley,
+.rsswidget img {
+	border: 0;
+	border-radius: 0;
+	box-shadow: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+.wp-caption.alignleft + ul,
+.wp-caption.alignleft + ol {
+	list-style-position: inside;
+}
+
+
+/**
+ * Mobile
+ * ----------------------------------------------------------------------------
+ */
+
+
+@media (max-width: 960px) {
+	
+}
+@media (max-width: 768px) {
+	a.navbar-brand .sm-title {display:block;} 
+	.navbar-brand img, .carousel-indicators {display:none;}
+	.navbar-brand {height: auto;}
+	.bc-main {margin-top: 0;}
+	.service-box-inner {margin: 15px 25px;min-height: 120px;}
+}
+@media (max-width: 643px) {
+	
+}
+
+.carousel-inner > .item {
+    -webkit-transition: 0.5s ease-in-out left;
+    -moz-transition: 0.5s ease-in-out left;
+    -o-transition: 0.5s ease-in-out left;
+    transition: 0.5s ease-in-out left;
+}
