@@ -18,7 +18,7 @@ function cfs_settings_data() {
 
 }
 
-function tech_settings_page()
+function cfs_settings_page()
 {
     // admin
     ?>
@@ -46,7 +46,7 @@ function tech_settings_page()
                     <td><textarea name="footer_1"><?php echo esc_attr( get_option('footer_1') ); ?></textarea></td>
                 </tr>
                 <tr valign="top">
-                    <th scope="row"><label for="footer_2">Widget HTML code</label></th>
+                    <th scope="row"><label for="footer_2">Footer section 2</label></th>
                     <td><textarea name="footer_2"><?php echo esc_attr( get_option('footer_2') ); ?></textarea></td>
                 </tr>
             </table>

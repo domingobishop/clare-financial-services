@@ -33,9 +33,17 @@
                 </div>
                 <div class="row bc-info">
 					<div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p><small>Graeme Wandel, ABN 73 958 427 156 trading as Clare Financial Services is an Authorised Representative of GWM Adviser Services Limited ABN 96 002 071 749 trading as Garvan Financial Planning, Australian Financial Services Licensee 230692, with its registered office at 105–153 Miller Street North Sydney NSW 2060.<br><a href="http://clarefs.com.au/wp/terms-conditions" target="_blank">Terms and Conditions</a> </small><br>Any advice in this site is of a general nature only and has not been tailored to your personal circumstances.  Please seek personal advice prior to acting on this information. Please note that GWM Adviser Services is not responsible for the advice and services provided by Clare General Insurance Services Pty Ltd.<br/>
- 
-Graeme Wandel is an owner of Clare General Insurance Services Pty Ltd and as a result will receive distributions and/or other benefits from Clare General Insurance Services Pty Ltd.</small></p>
+                    <p>
+                        <small><?php echo esc_attr( get_option('footer_1') ); ?><br>
+                            <a href="http://clarefs.com.au/wp/terms-conditions" target="_blank">Terms and Conditions</a></small>
+                    </p>
+                    <p>
+                        <small>Any advice in this site is of a general nature only and has not been tailored to your personal circumstances.
+                        Please seek personal advice prior to acting on this information. Please note that GWM Adviser Services is not
+                        responsible for the advice and services provided by Clare General Insurance Services Pty Ltd.<br/>
+                        Graeme Wandel is an owner of Clare General Insurance Services Pty Ltd and as a result will receive
+                        distributions and/or other benefits from Clare General Insurance Services Pty Ltd.</small>
+                    </p>
                     	<p><small>Copyright © <?php echo date("Y"); ?></small></p> 
 			<p><small><a href="http://creatistic.com.au" target="_blank">Website made by Creatistic</a></small></p> 
                     </div>
